@@ -47,10 +47,11 @@ form{
     cursor: pointer;
     border:none;
     font-size: 20px;
-    transition: tranform ease-in .5s;
+    transition: transform ease-in .2s;
 }
 #search-button:hover{
-    transform: scale(1.2);
+    transform: scale(1.2) rotateX(360deg);
+    color:yellow;
 }
 
 #search-input{
@@ -69,14 +70,10 @@ a:hover{
     color: yellow;
 }
 #heading {
-    background-color: gainsboro;
+    background-color: rgb(244, 240, 240);
 }
 
-#whatis {
-    width: 300px;
-    background-color: forestgreen;
-    border: 10px solid orchid;
-}
+
 
 #registration {
     width: 30%;
@@ -98,4 +95,51 @@ Content
 
 #content{
     display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+
+}
+#heading{
+    grid-column-start: 1;
+    grid-column-end: 4; 
+    grid-row-start: 1;
+    grid-row-end: 2;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+.flowtow{
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr); 
+}
+
+hgroup,#whatis, #registration, #recent-users{
+    grid-column-start: 1;
+    grid-column-end: 4;
+}
+.flowtow >ul{
+    list-style: none;
+}
+.flowtow > ul> li > img{
+    transition: transform ease-in-out .5s;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.flowtow > ul> li > img:hover{
+    transform: scale(1.1);
+}
+
+.like-button:hover{
+    content: '';
+    color: green;
+}
+
+#whatis{
+    width: 100%;
+    font-size: large;
+    text-align: center;
+    background-color: #f6f2f2;
+    background-image: url('./shutter.svg');
+    background-size: 100px;
+    background-repeat: repeat;
+    background-position: center;
 }
