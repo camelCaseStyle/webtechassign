@@ -12,6 +12,9 @@ body{
     margin-left: 1em;
     
 }
+li{
+    list-style: none;
+}
 nav > ul{
     list-style: none;
     display: flex;
@@ -27,17 +30,22 @@ header {
     display: flex;
     align-items: center;
 }
-
 form{
-    margin: 0 2em 0 auto;
-    display: inline-flex;
     font-size: 20px;
 }
-.form-input{
+#search-form > .form-input{
     color: white;
     height: 20px;
     width: 100%;
     
+}
+#search-form{
+    display: flex;
+    margin: 0 2em 0 auto;
+
+}
+.form-submit > input:hover{
+    color: green;
 }
 
 #search-button{
@@ -71,18 +79,17 @@ a:hover{
 }
 #heading {
     background-color: rgb(244, 240, 240);
+    text-align: center;
 }
-
-
 
 #registration {
     width: 30%;
     margin: auto;
-    background-color: rosybrown;
 }
 
 footer {
-    background-color: yellow;
+    background-color: #212529;
+    text-align: center;
 }
 
 img {
@@ -96,7 +103,8 @@ Content
 #content{
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: repeat(2, 1fr);
+    grid-template-rows: auto;
+    background-color: #f6f2f2;
 
 }
 #heading{
@@ -109,9 +117,12 @@ Content
 }
 .flowtow{
     grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: repeat(2, 1fr); 
+    grid-template-rows: auto
 }
-
+hgroup{
+    color: indianred;
+    font-size: 2em;
+}
 hgroup,#whatis, #registration, #recent-users{
     grid-column-start: 1;
     grid-column-end: 4;
@@ -122,6 +133,7 @@ hgroup,#whatis, #registration, #recent-users{
 .flowtow > ul> li > img{
     transition: transform ease-in-out .5s;
     border-radius: 10px;
+    margin-bottom: 1em;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 .flowtow > ul> li > img:hover{
@@ -129,7 +141,6 @@ hgroup,#whatis, #registration, #recent-users{
 }
 
 .like-button:hover{
-    content: '';
     color: green;
 }
 
@@ -137,9 +148,59 @@ hgroup,#whatis, #registration, #recent-users{
     width: 100%;
     font-size: large;
     text-align: center;
-    background-color: #f6f2f2;
+    padding: 20px;
     background-image: url('./shutter.svg');
-    background-size: 100px;
+    background-size: 70px;
     background-repeat: repeat;
     background-position: center;
 }
+
+#registration{
+    border-radius: 30px;
+    text-align: center;
+    height: 16em;
+    transform: perspective(100px) translateZ(0px);
+    transition-property: transform;
+    transition-duration: .5s;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    
+}
+#registration:hover{
+    transform: perspective(200px) translateZ(90px);
+    background-color: #f6f2f2;
+
+}
+
+.user > a{
+    color: chocolate;
+}
+
+#social > ul{
+    list-style-type: none;
+    display: flex;
+}
+#social > ul > li,
+.footer-tos > li{
+    margin: 10px;
+}
+#social{
+    display: flex;
+    justify-content: center;
+}
+.footer-tos{
+    list-style-type: none;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+ 
+}
+
+#copyright{
+    margin: 0;
+}
+#recent-users{
+    text-align: center;
+}
+.form-input> label{
+    margin-right: 1em;
+}    
