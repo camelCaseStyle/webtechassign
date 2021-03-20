@@ -1,0 +1,101 @@
+/* sample spreadshet - you should replace all of this! */
+
+body{
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#logo > img{
+    width: 50px;
+    height: 50px;
+    color: white;
+    margin-left: 1em;
+    
+}
+nav > ul{
+    list-style: none;
+    display: flex;
+    padding: 0;
+}
+nav > ul > li{
+    margin: 1em;
+}
+header {
+    width: 100%;
+    height: 4em;
+    background:#212529;
+    display: flex;
+    align-items: center;
+}
+
+form{
+    margin: 0 2em 0 auto;
+    display: inline-flex;
+    font-size: 20px;
+}
+.form-input{
+    color: white;
+    height: 20px;
+    width: 100%;
+    
+}
+
+#search-button{
+
+    background: none;
+    color: white;
+    cursor: pointer;
+    border:none;
+    font-size: 20px;
+    transition: tranform ease-in .5s;
+}
+#search-button:hover{
+    transform: scale(1.2);
+}
+
+#search-input{
+    border-radius: 5px;
+}
+
+a{
+    text-decoration: none;
+    color: white;
+    transition: transform .2s;
+    display: inline-block;
+}
+
+a:hover{
+    transform: scale(1.2);
+    color: yellow;
+}
+#heading {
+    background-color: gainsboro;
+}
+
+#whatis {
+    width: 300px;
+    background-color: forestgreen;
+    border: 10px solid orchid;
+}
+
+#registration {
+    width: 30%;
+    margin: auto;
+    background-color: rosybrown;
+}
+
+footer {
+    background-color: yellow;
+}
+
+img {
+    width: 300px;
+}
+
+/*****
+Content
+******/
+
+#content{
+    display: grid;
+}
