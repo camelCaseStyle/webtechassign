@@ -1,6 +1,6 @@
 /* 
 STUDENT NAME: ANUBHAV ASHISH 
-STUDEND ID:   45317569
+STUDEND ID:  45317569
 */
 
 body{
@@ -148,7 +148,7 @@ hgroup,#whatis, #registration, #recent-users{
 }
 
 #whatis{
-    width: 100%;
+    margin-bottom: 1em;
     font-size: large;
     text-align: center;
     padding: 20px;
